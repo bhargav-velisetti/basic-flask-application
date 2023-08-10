@@ -1,0 +1,10 @@
+{
+    "deployment_mode" : {
+         "value" : "DEV", 
+         "allowed_values" : ["DEV", "SAML"]
+        },
+    "session_timeout" : {
+        "value" : 5,
+        "description" : "UI Session will be expired after 5 mins and user needs to login again."
+    }
+}

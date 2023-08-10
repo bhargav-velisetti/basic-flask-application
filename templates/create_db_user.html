@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown</title>
+</head>
+
+<body>
+Choose DB: <select name= "Database" method="POST" action="/home/db_section/create_db_user">
+    {% for db in db_list %}
+    <option value= {{db}} SELECTED>{{db}}</option>"
+    {% endfor %}
+</select>
+</body>
+
+<form action="/home/db_section/create_db_user" method = "POST">
+    <p>User_First_Name: <input type = "text" name = "First Name" /></p>
+    <p>User_Last_Name: <input type = "text" name = "Last Name" /></p>
+    <p>User_Email: <input type = "text" name = "Email" /></p>
+    <p>Comments: <input type = "text" name = "Comments" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+
+</html>

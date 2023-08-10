@@ -1,0 +1,4 @@
+.vs/*
+__pycache__/*
+utils/__pycache__/*
+.git/*
